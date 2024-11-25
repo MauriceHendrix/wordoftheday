@@ -21,7 +21,6 @@ for lip in letters_in_place_input:
 for lop in letters_out_of_place_input:
     if lop !='':
         letter, position = lop[0], int(lop[1:])
-        print(letter, position, letters_out_of_place.get(position, []))
         letters_out_of_place[position] = letters_out_of_place.get(position, [])
         letters_out_of_place[position] += [letter]
         required_letters.append(letter)
